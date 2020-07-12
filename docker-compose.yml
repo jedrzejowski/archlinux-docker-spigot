@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+    minecraft-server:
+        image: nimmis/spigot
+        environment:
+          - EULA=true
+          - SPIGOT_VER=1.16.1
+        volumes: 
+          - /srv/minecraft-${MCS_NAME}:/minecraft
+        ports: 
+          - target: 25565
+            published: ${MCS_PORT}
+            protocol: tcp
+            mode: host
+
+            
