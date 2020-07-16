@@ -1,7 +1,7 @@
 # Maintainer: Adam Jęrzejowski <adam@jedrzejowski.pl>
 
 pkgname=docker-spigot
-pkgver="0.0.3"
+pkgver="0.0.5"
 pkgrel=1
 pkgdesc="Spigot Server"
 arch=('any')

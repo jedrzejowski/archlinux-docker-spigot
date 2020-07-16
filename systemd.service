@@ -10,7 +10,7 @@ WorkingDirectory=/usr/lib/docker-spigot
 EnvironmentFile=/srv/minecraft-%i.env
 Environment=MCS_NAME=%i
 ExecStart=/usr/bin/docker-compose --project-name spigot_%i up -d --remove-orphans
-ExecStop=/usr/bin/docker-compose down
+ExecStop=/usr/bin/docker-compose --project-name spigot_%i down
 
 [Install]
 WantedBy=multi-user.target
